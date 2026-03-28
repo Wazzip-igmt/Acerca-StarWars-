@@ -1,0 +1,108 @@
+<html>
+<title>Padme Amidala</title>
+<head>
+<style>
+	body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("imagens/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Orbitron', sans-serif;
+    color: yellow;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.foto {
+    width: 400px;
+    margin-top: 140px;
+    border-radius: 10px;
+
+    animation: subir 1.5s ease forwards;
+
+    box-shadow: 0 0 20px purple, 0 0 40px purple;
+}
+
+.descricao {
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 12px;
+
+    opacity: 0;
+    animation: aparecer 1.5s ease forwards;
+    animation-delay: 1.5s;
+	
+}
+
+h1 {
+    color: #b300ff;
+    text-shadow: 0 0 10px purple, 0 0 20px purple;
+}
+
+@keyframes subir {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes piscar {
+    0% { box-shadow: 0 0 10px purple; }
+    50% { box-shadow: 0 0 30px violet; }
+    100% { box-shadow: 0 0 10px purple; }
+}
+
+	.voltar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #FFE81F;
+    text-decoration: none;
+    border: 1px solid #FFE81F;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.voltar:hover {
+    background-color: #FFE81F;
+    color: black;
+}
+</style>
+<body>
+<img src="imagens/padme2.jpg" class="foto">
+<div class="descricao">
+    <h1>Padmé Amidala</h1>
+    <p>
+       <p>
+		<p>
+    Padmé é uma líder dedicada e diplomata habilidosa. Conhecida por sua coragem e
+    compromisso com a paz, ela busca sempre o melhor para seu povo.
+</p>
+</p>
+    </p>
+</div>
+
+<a href="album.html" class="voltar">Voltar</a>
+</body>
+</html>
