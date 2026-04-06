@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álbum - Star Wars</title>
+  <style>
+    img {
+    user-select: none;
+    -webkit-user-drag: none;
+     }
+    body {
+      margin: 0;
+      background-image: url("imagens/fundo.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      filter: drop-shadow(0 0 5px #FFE81F)
+        drop-shadow(0 0 10px #FFE81F)
+        drop-shadow(0 0 20px #FFE81F);
+    }
+    .galeria {
+      margin-top: 120px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card h3 {
+      color: #FFE81F;
+      padding: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #FFE81F;
+    }
+    .voltar {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      color: #FFE81F;
+      text-decoration: none;
+      border: 1px solid #FFE81F;
+      padding: 8px 15px;
+      border-radius: 8px;
+    }
+    .voltar:hover {
+      background-color: #FFE81F;
+      color: black;
+    }
+  </style>
+</head>
+<body oncontextmenu="return false">
+
+  <img src="imagens/logo.png" class="logo" alt="Logo Star Wars">
+
+  <div class="galeria">
+
+    <div class="card">
+      <a href="Palpatine.html">
+        <img src="imagens/palpatine.jpeg" alt="Palpatine, o Imperador Sith">
+        <h3>Palpatine</h3>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="Anakin.html">
+        <img src="imagens/anakin.jpg" alt="Anakin Skywalker, o Chosen One">
+        <h3>Anakin Skywalker</h3>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="mace.html">
+        <img src="imagens/mace.jpg" alt="Mace Windu, Mestre Jedi do Conselho">
+        <h3>Mace Windu</h3>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="obiwan.html">
+        <img src="imagens/obiwa.jpg" alt="Obi-Wan Kenobi, Mestre Jedi">
+        <h3>Obi-wan Kenobi</h3>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="nihilus.html">
+        <img src="imagens/nihilus.jpg" alt="Darth Nihilus, Lorde Sith">
+        <h3>Darth Nihilus</h3>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="ioda.html">
+        <img src="imagens/ioda.jpg" alt="Mestre Yoda, Grande Mestre Jedi">
+        <h3>Mestre Yoda</h3>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="grivous.html">
+        <img src="imagens/grivous.jpg" alt="General Grievous, comandante separatista">
+        <h3>General Grievous</h3>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="jarjar.html">
+        <img src="imagens/jarjar.jpg" alt="Jar Jar Binks, Gungan da Naboo">
+        <h3>Jar Jar Binks</h3>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="prinleia.html">
+        <img src="imagens/prinleia.jpg" alt="Princesa Leia Organa, líder da Aliança Rebelde">
+        <h3>Princesa Leia</h3>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="padme.html">
+        <img src="imagens/padme.jpg" alt="Padmé Amidala, Rainha e Senadora de Naboo">
+        <h3>Padmé Amidala</h3>
+      </a>
+    </div>
+
+  </div>
+
+  <a href="index.html" class="voltar">Voltar</a>
+
+</body>
+</html>
